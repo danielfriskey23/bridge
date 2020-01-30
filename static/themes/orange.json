@@ -1,6 +1,9 @@
 {
     "name": "Orange",
     "id": "bridge.orange.theme",
+    "options": {
+        "css": "orange.css"
+    },
     "definition": {
         "dark": {
             "highlighter": {
