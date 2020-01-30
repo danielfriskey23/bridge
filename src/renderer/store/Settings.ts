@@ -18,6 +18,7 @@ function setup() {
             id: uuid(),
             is_dev_mode: false,
             is_dark_mode: true,
+            intro_complete: false,
             inversed_arrows: false,
             use_tabs: true,
             line_wraps: false,
@@ -47,6 +48,8 @@ function setup() {
         save({ id: uuid() });
     if(DATA.text_auto_completions === undefined)
         save({ text_auto_completions: true });
+    if(DATA.intro_complete === undefined)
+        save({ intro_complete: false })
 }
 function save(settings: { [s: string]: any }) {
     if(DATA) DATA = Object.assign(DATA, settings);
